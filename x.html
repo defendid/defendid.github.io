@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabbed Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .tab {
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: background-color 0.3s;
+      font-size: 16px;
+    }
+
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px 0;
+      border-top: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Tabs Example</h2>
+
+  <div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'Tab1')">Tab 1</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+  </div>
+
+  <div id="Tab1" class="tab-content active">
+    <h3>Tab 1</h3>
+    <p>This is the content for Tab 1.</p>
+  </div>
+
+  <div id="Tab2" class="tab-content">
+    <h3>Tab 2</h3>
+    <p>This is the content for Tab 2.</p>
+  </div>
+
+  <div id="Tab3" class="tab-content">
+    <h3>Tab 3</h3>
+    <p>This is the content for Tab 3.</p>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      // Hide all tab contents
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+
+      // Remove active class from all tabs
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+
+      // Show the selected tab
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
