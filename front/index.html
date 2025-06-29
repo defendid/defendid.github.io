@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Dropdown Left</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <!-- Dropdown Menu (on the left) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="leftDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="leftDropdown">
+            <li><a class="dropdown-item" href="/law_enforcement_help.html">Law Enforcement Help</a></li>
+            <li><a class="dropdown-item" href="/mental_health.html">Mental Health &amp; Crisis Support</a></li>
+            <li><a class="dropdown-item" href="/proving_deepfake.html">Proving It's a Deepfake</a></li>
+            <li><a class="dropdown-item" href="/content_removal.html">Content Removal Help</a></li>
+            <li><a class="dropdown-item" href="/legal_assistance.html">Legal Assistance</a></li>
+            <li><a class="dropdown-item" href="/resources_by_audience.html">Resources by Audience</a></li>
+            <li><a class="dropdown-item" href="/downloads_and_checklists.html">Downloads &amp; Checklists</a></li>
+            <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
+          </ul>
+        </li>
+
+        <!-- Other left-side items -->
+
+      </ul>
+
+      <!-- Right-side nav items -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
