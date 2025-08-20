@@ -7,6 +7,32 @@
 
   <!-- Bootstrap 5 CSS -->
   <link href="/bootstrap.min.css" rel="stylesheet" />
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.querySelector('.navbar-toggler');
+    const dropdownToggle = document.querySelector('#leftDropdown');
+
+    let dropdownInstance = null;
+    let dropdownVisible = false;
+
+    toggler.addEventListener('click', function () {
+      // Delay to wait for navbar to expand
+      setTimeout(function () {
+        if (!dropdownInstance) {
+          dropdownInstance = new bootstrap.Dropdown(dropdownToggle);
+        }
+
+        if (!dropdownVisible) {
+          dropdownInstance.show();
+        } else {
+          dropdownInstance.hide();
+        }
+
+        dropdownVisible = !dropdownVisible;
+      }, 300); // Matches navbar collapse animation time
+    });
+  });
+</script>
 </head>
 <body>
 
