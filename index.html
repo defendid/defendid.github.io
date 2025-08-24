@@ -7,39 +7,11 @@
 
   <!-- Bootstrap 5 CSS -->
   <link href="/bootstrap.min.css" rel="stylesheet" />
-  <script src="/bootstrap.bundle.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggler = document.querySelector('.navbar-toggler');
-    const dropdownToggle = document.querySelector('#leftDropdown');
-
-    let dropdownInstance = null;
-    let dropdownVisible = false;
-
-    toggler.addEventListener('click', function () {
-      // Delay to wait for navbar to expand
-      setTimeout(function () {
-        if (!dropdownInstance) {
-          dropdownInstance = new bootstrap.Dropdown(dropdownToggle);
-        }
-
-        if (!dropdownVisible) {
-          dropdownInstance.show();
-        } else {
-          dropdownInstance.hide();
-        }
-
-        dropdownVisible = !dropdownVisible;
-      }, 300); // Matches navbar collapse animation time
-    });
-  });
-</script>
-
 </head>
 <body style="background-color: #AEC3B0;">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #AEC3B0;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style=".background-color: #AEC3B0;">
   <div class="container-fluid">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -51,9 +23,9 @@
       <ul class="navbar-nav me-auto">
         <!-- Dropdown Menu (on the left) -->
         <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle text-white fw-bold fs-4" href="#" id="leftDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-  GET HELP NOW
-</a>
+          <a class="nav-link dropdown-toggle" href="#" id="leftDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GET HELP NOW
+          </a>
           <ul class="dropdown-menu" aria-labelledby="leftDropdown">
             <li><a class="dropdown-item" href="/index.html">Home</a></li>
             <li><a class="dropdown-item" href="/law_enforcement_help.html">Law Enforcement Help</a></li>
@@ -61,8 +33,10 @@
             <li><a class="dropdown-item" href="/proving_deepfake.html">Proving It's a Deepfake</a></li>
             <li><a class="dropdown-item" href="/content_removal.html">Content Removal Help</a></li>
             <li><a class="dropdown-item" href="/legal_assistance.html">Legal Assistance</a></li>
-            <li><a class="dropdown-item" href="/take_it_down.html">Take it Down</a></li>
-            <li><a class="dropdown-item" href="/downloads_and_checklists.html">AI Checklist and Educator Resources</a></li>
+            <li><a class="dropdown-item" href="/resources_by_audience.html">Resources by Audience</a></li>
+            <li><a class="dropdown-item" href="/downloads_and_checklists.html">Downloads &amp; Checklists</a></li>
+            <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
           </ul>
         </li>
 
@@ -73,7 +47,7 @@
       <!-- Right-side nav items -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <img style="background: white" src="/img/logo_small.png" alt="DefendID" />
+          <img src="/img/logo_small.png" alt="DefendID" />
         </li>
       </ul>
     </div>
@@ -83,19 +57,29 @@
 <main style="background-color: #AEC3B0;">
   
   
-  <h1 class="display-5 fw-bold text-body-emphasis"><img style="background: white" src="/img/logo_small.png" alt="DefendID" /></h1>
-  <div class="px-4 py-2 my-2 text-center fs-3 fw-bold" style="background-color: #AEC3B0;"><B>Our mission is to empower those affected by the misuse of <br />artificial intelligence (AI) "deepfake" technology through action and education.</B></div>
-  <div style="max-width: 700px; margin: auto;">
+  <h1 class="display-5 fw-bold text-body-emphasis">DefendID</h1>
+  <div class="px-4 py-5 my-5 text-center" style="background-color: #AEC3B0;"><h1>Our mission is to empower those affected by the misuse of <br />artificial intelligence (AI) "deepfake" technology through action and education.</h1></div>
   <div class="container">
- <div style="padding:56.25% 0 0 0;position:relative;" class="embed-responsive embed-responsive-16by9"><iframe src="https://player.vimeo.com/video/1098808647?h=ee86a9b86b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DEFEND ID"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-</div></div>
+  <div class="ratio ratio-16x9">
+    <video controls autoplay>
+      <source src="/defendid_landing_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
-  <div class="px-4 py-3 my-3 text-center fs-4" style="background-color: #AEC3B0;"><b>YOU'RE HERE FOR HELP.<br /> 
+  <div class="px-4 py-5 my-5 text-center" style="background-color: #AEC3B0;"><h1><b>YOU'RE HERE FOR HELP.<br /> 
 WATCH THIS BRIEF VIDEO TO GET STARTED.<br />THIS SITE IS DESIGNED TO HELP ASSIST THOSE IMPACTED BY AI-DEEPFAKE CRIME.<br /> 
-USE THE "HELP LINKS" TAB ABOVE TO GET STARTED FIGHTING BACK.</b></div>
+USE THE "HELP LINKS" TAB ABOVE TO GET STARTED FIGHTING BACK.</b></h1></div>
 </main>
 <!-- Bootstrap JS -->
-
-
+<script src="/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"> //<![CDATA[
+  var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+  document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script language="JavaScript" type="text/javascript">
+  TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_sm_124x32.png", "POSDV", "none");
+</script>
 </body>
 </html>
