@@ -33,6 +33,11 @@
     });
   });
 </script>
+<style>
+  #comodoTL {
+    float: right !important;
+  }
+</style>
 </head>
 <body style="background-color: #AEC3B0;">
 
@@ -80,17 +85,86 @@
 
 <main style="background-color: #AEC3B0;">
   <h1 class="display-5 fw-bold text-center text-body-emphasis">Detecting Deepfakes</h1>
-  <div class="px-4 py-5 my-5 text-center" style="background-color: #AEC3B0;">
-    <ul style="list-style: none;" class="fs-2 fw-bold">
-      <li><a target="_new" href="https://thedetector.ai/">AI Detector</a>&nbsp;</li>
-      <li><a target="_new" href="http://sensity.ai/">sensity.ai</a>&nbsp;</li>
-      <li><a target="_new" href="http://deepware.ai/">deepware.ai</a>&nbsp;</li>
-      <li><a target="_new" href="http://deepfakedetector.ai/">deepfakedetector.ai</a>&nbsp;</li>
-      <li><a target="_new" href="http://duckduckgoose.ai/">duckduckgoose.ai</a>&nbsp;</li>
-      <li><a target="_new" href="http://resemble.ai/">Resemble.ai</a>&nbsp;</li>
-      <li><a target="_new" href="https://www.mcafee.com/ai/deepfake-detector/">McAfee Deepfake Detector</a>&nbsp;</li>
-    </ul>
+  <div class="px-4 py-5 my-5 text-center fw-bold" style="background-color: #AEC3B0;">
+    <p>
+    There are ways to verify or strongly challenge whether audio, video, or images are AI-generated. No single test is perfect, but a layered approach—provenance + watermark checks 
++ forensic analysis + OSINT/context—does work in practice.</p>
+<p>No single tool or test can always confirm whether a video, image, or audio clip is AI-generated.</p>
+
+<p>Using several methods listed below together greatly increases accuracy.</p>
+<p>Provenance tools like Adobe’s Content Credentials and Truepic’s C2PA
+ signatures can verify if media was captured authentically. </p>
+<p>Watermarking systems such as Google’s SynthID and Meta’s
+ AudioSeal/VideoSeal help identify AI-originated content when supported.</p>
+
+<p>Forensic detectors like Reality Defender, Sensity AI, and Pindrop specialize 
+in scanning for digital artifacts and patterns left behind by generative models.</p>
+
+<p>OSINT resources like the Bellingcat Toolkit and Amnesty’s YouTube DataViewer 
+provide context checks through reverse search and metadata analysis.</p>
+ <p>By layering provenance, watermarking, forensic detection, 
+and open-source verification, victims and investigators can build 
+a strong case to prove manipulation and push for takedowns more effectively.</p>
+
+<p>This vetted roster of specialists and tools will help you in proving media is faked:</p>
   </div>
+  <div class="container my-5">
+  <div class="row align-items-start">
+    <!-- Left column: Image -->
+    <div class="col-md-4 text-center">
+      <img src="/img/detect_deepfake.png" alt="Deepfake Detection" class="img-fluid rounded" />
+    </div>
+
+    <!-- Right column: Links list -->
+    <div class="col-md-8">
+<h3>SERVICES</h3>
+
+<b>Reality Defender</b><br />
+<a href="https://www.realitydefender.com/" target="_new">https://www.realitydefender.com/</a><br />
+An enterprise scanning for images/video/audio, real-time meeting plugins, 
+used in newsrooms &amp; finance. <br /><br />
+
+<b>Sensity AI</b><br />
+<a href="https://sensity.ai/deepfake-detection/?utm_source=chatgpt.com" target="_new">https://sensity.ai/deepfake-detection/?utm_source=chatgpt.com</a><br />
+Simply drag and drop your files and get a deepfake media verification within seconds. Our advanced system uses a multilayer approach, examining pixels, file structures, and voice patterns to deliver the most comprehensive assessment effortlessly.<br /><br />
+
+<b>Truepic AI</b><br />
+<a href="https://www.truepic.com/blog/truepic-breakthrough-charts-a-path-for-restoring-trust-in-photos-and-videos-at-internet-scale?utm_source=chatgpt.com " target=_new">https://www.truepic.com/blog/truepic-breakthrough-charts-a-path-for-restoring-trust-in-photos-and-videos-at-internet-scale?utm_source=chatgpt.com</a><br /><br />
+
+<b>Pindrop</b><br />
+<a href="https://www.pindrop.com/" target="_new">https://www.pindrop.com/</a><br />
+An industry leader in synthetic-voice detection (“Pulse/Pulse Inspect”), reports + research, ASVspoof participation, cited for high-accuracy detection and real incidents (e.g., Biden robocall analysis).<br /><br />
+
+<b>Resemble Detect: Deepmedia</b><br />
+<a href="https://deepmedia.ai/blog/detect-deepfakes-2025?utm_source=chatgpt.com">https://deepmedia.ai/blog/detect-deepfakes-2025?utm_source=chatgpt.com</a><br />
+Voice deepfake detection API for media and platforms<br /><br />
+
+<h3>ACADEMIC AND INDEPENDENT CONTRACTORS:</h3><br />
+
+<b>Hany Farid (UC Berkeley)</b><br />
+<a href="https://farid.berkeley.edu/?utm_source=chatgpt.com" target="_new">https://farid.berkeley.edu/?utm_source=chatgpt.com</a><br />
+A pioneering digital forensics scholar; deepfake methods, expert testimony, and practical guidance.<br /><br />
+
+<b>Siwei Lyu (UB Media Forensic Lab)</b><br />
+<a href="https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory.host.html/content/shared/engineering/computer-science-engineering/profiles/faculty/ladder/lyu-siwei.detail.html?utm_source=chatgpt.com" target="_new">https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory.host.html/content/shared/engineering/computer-science-engineering/profiles/faculty/ladder/lyu-siwei.detail.html?utm_source=chatgpt.com</a><br />
+A leading research group on media forensics and biological/visual cues. Public contact available.
+<br /><br />
+<b>YouTube Data Viewer</b><br />
+ <a href="https://citizenevidence.org/2014/07/01/youtube-dataviewer/?utm_source=chatgpt.com" target="_new">https://citizenevidence.org/2014/07/01/youtube-dataviewer/?utm_source=chatgpt.com</a><br />
+The YouTube Data Viewer is a simple tool to extract hidden data from videos hosted on YouTube.<br /><br />
+
+<b>Adobe Content Credentials explainer &amp; viewers</b><br />
+<a href="https://contentauthenticity.org/how-it-works?utm_source=chatgpt.com" target="_new">https://contentauthenticity.org/how-it-works?utm_source=chatgpt.com</a><br /><br />
+
+<b>Bellingcat Digital Tools</b><br />
+<a href="https://bellingcat.gitbook.io/toolkit?utm_source=chatgpt.com" target="_new">https://bellingcat.gitbook.io/toolkit?utm_source=chatgpt.com</a><br />
+Tools for image/video verification and metadata checks.
+
+    </div>
+  </div>
+</div>
+
+  
 
 </main>
 <!-- Bootstrap JS -->
@@ -99,8 +173,10 @@
   var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
   document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
 //]]></script>
+<div class="container text-end my-4">
 <script language="JavaScript" type="text/javascript">
   TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_sm_124x32.png", "POSDV", "none");
 </script>
+</div>
 </body>
 </html>
