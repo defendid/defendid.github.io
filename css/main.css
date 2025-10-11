@@ -1,0 +1,41 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.stacked-div {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+
+.bg-image-div {
+  background-image: url('/img/girl2.png');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.content {
+  padding-top: 6rem; /* Add top padding to avoid overlapping with navbar */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Optional: Make navbar background slightly transparent */
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ddd;
+}
