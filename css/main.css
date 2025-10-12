@@ -18,7 +18,7 @@ body {
   background-image: url('/img/girl2.png');
   background-size: cover;
   background-position: center;
-  
+  color: white;
 }
 
 .content {
@@ -38,4 +38,16 @@ body {
 
 .navbar-custom .nav-link:hover {
   color: #ddd;
+}
+
+.gradient-btn {
+  background: linear-gradient(to bottom right, white, #0d6efd); /* white to Bootstrap primary blue */
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(to bottom right, #0d6efd, white);
+  color: #000;
 }
