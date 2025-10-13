@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DefendID</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DefendID</title>
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="/css/main.css"
-    rel="stylesheet"
-  />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/css/main.css" rel="stylesheet" />
 
 <style>
-  .bg-image-div {
-    background: url('/img/girl2.png') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 100px 0;
-    min-height: 400px;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 150px; /* ensures next section starts clearly after */
-  }
+
 
   .stacked-div {
     position: relative;
     z-index: 0;
     padding: 60px 20px;
+    margin-top: 100px; /* ensures it's clearly below the hero */
   }
 
   .text-overlay {
@@ -39,97 +28,147 @@
     border-radius: 8px;
   }
 </style>
-</head>
+  </head>
 
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <img src="/img/logo_small_dark.png" alt="DefendID" />
-        </li>
-      </ul>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about.html">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact.html">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="/help.html">Get Help</a></li>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="/img/logo_small_dark.png" alt="DefendID" />
+          </li>
         </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="/help.html">Get Help</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Page Content -->
-  <div class="container-fluid" style="margin-top: 80px; padding: 0;">
+    <!-- Page Content -->
+    <div class="container-fluid" style="margin-top: 80px; padding: 0;">
+      <!-- Hero Section -->
+      <div class="stacked-div bg-image-div">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-md-5 col-lg-4 text-end text-overlay">
+              <h1>AI HARMS ARE REAL.<br />HELP IS HERE</h1>
+              <p>
+                The creation and dissemination of a fake image or video of you is a violation of
+                privacy and a source of trauma.
+              </p>
+              <p><i>You do not have to cope with this alone</i></p>
+              <div class="mt-4">
+                <a href="/help.html" class="btn gradient-btn rounded-pill me-2">Get Help</a>
+                <a href="/about.html" class="btn gradient-btn rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Hero Section -->
-    <div class="stacked-div bg-image-div">
-      <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-md-5 col-lg-4 text-end text-overlay">
-            <h1>AI HARMS ARE REAL.<br />HELP IS HERE</h1>
-            <p>The creation and dissemination of a fake image or video of you is a violation of privacy and a source of trauma.</p>
-            <p><i>You do not have to cope with this alone</i></p>
-            <div class="mt-4">
-              <a href="/help.html" class="btn gradient-btn rounded-pill me-2">Get Help</a>
-              <a href="/about.html" class="btn gradient-btn rounded-pill">Learn More</a>
+      <!-- Main Content -->
+      <div class="stacked-div">
+        <div class="container text-center">
+          <!-- What We Do Section -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <h1 class="fs-1">What We Do</h1>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-4">
+              <img src="/img/SupportVictims.png" class="img-fluid mb-3" alt="Support Victims" />
+              <p>We support victims of AI-generated abuse with compassion and care.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <img src="/img/Outreach.png" class="img-fluid mb-3" alt="Outreach" />
+              <p>We engage with communities to raise awareness and share tools.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <img src="/img/Prevention.png" class="img-fluid mb-3" alt="Prevention" />
+              <p>We advocate for stronger protections and digital safety laws.</p>
+            </div>
+          </div>
+
+          <!-- Video Section -->
+          <div class="row mb-5 justify-content-center">
+            <div class="col-12 col-md-8">
+              <div class="ratio ratio-16x9">
+                <video controls>
+                  <source src="/defendid_landing_video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why It Matters -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <h1 class="fs-1">Why It Matters</h1>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <h1 style="color: #2776ad">Over 90%</h1>
+              <p>of AI-generated images are non-consensual and sexually explicit</p>
+              <p class="fs-8">Department of Homeland Security</p>
+            </div>
+            <div class="col-md-6">
+              <h1 style="color: #2776ad">Over 99%</h1>
+              <p>of victims are women</p>
+              <p class="fs-8">Harvard Law Review</p>
+            </div>
+          </div>
+
+          <!-- How It Works -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <h1 class="fs-1">How It Works</h1>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-4 mb-4">
+              <img src="/img/PreserveEvidence.png" class="img-fluid mb-3" alt="Preserve Evidence" />
+              <p>Preserve Your Evidence</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <img src="/img/Escalate.png" class="img-fluid mb-3" alt="Report/Escalate" />
+              <p>Report/Escalate</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+              <img src="/img/Recover.png" class="img-fluid mb-3" alt="Recovery & Education" />
+              <p>Recovery &amp; Education</p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12">
+              <small>The information on this site is for general guidance only 
+              and does not constitute legal advice. If you need legal help, contact a licensed attorney. If you are in immediate danger, contact local law enforcement.</small>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- What We Do Section -->
-    <div class="stacked-div">
-      <div class="container text-center">
-
-        <!-- Section Title -->
-        <div class="row mb-5">
-          <div class="col-12">
-            <h2 class="fs-2">What We Do</h2>
-          </div>
-        </div>
-
-        <!-- Three Columns in One Row -->
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-4 mb-4">
-            <img src="/img/SupportVictims.png" class="img-fluid mb-3" alt="Support Victims" />
-            <p>We support victims of AI-generated abuse with compassion and care.</p>
-          </div>
-          <div class="col-12 col-md-4 mb-4">
-            <img src="/img/Outreach.png" class="img-fluid mb-3" alt="Outreach" />
-            <p>We engage with communities to raise awareness and share tools.</p>
-          </div>
-          <div class="col-12 col-md-4 mb-4">
-            <img src="/img/Prevention.png" class="img-fluid mb-3" alt="Prevention" />
-            <p>We advocate for stronger protections and digital safety laws.</p>
-          </div>
-        </div>
-
-        <!-- Video Section -->
-        <div class="row mb-5 justify-content-center">
-          <div class="col-12 col-md-8">
-            <div class="ratio ratio-16x9">
-              <video controls>
-                <source src="/defendid_landing_video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

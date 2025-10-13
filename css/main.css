@@ -10,16 +10,19 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  border-bottom: 1px solid #ddd;
   color: black;
 }
 
-.bg-image-div {
-  background-image: url('/img/girl2.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
+  .bg-image-div {
+    background: url('/img/girl2.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    min-height: 400px;
+    position: relative;
+    margin-bottom: 600px;
+    z-index: 1;
+  }
 
 .content {
   padding-top: 6rem; /* Add top padding to avoid overlapping with navbar */
