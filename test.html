@@ -18,13 +18,23 @@
       background: url('/img/girl2.png') no-repeat center center;
       background-size: cover;
       color: white;
-      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .text-overlay {
       background: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 8px;
+    }
+
+    .bottom-text {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
     }
 
     .stacked-div {
@@ -42,6 +52,10 @@
 
       .bg-image-div {
         padding: 60px 15px;
+      }
+
+      .bottom-text {
+        font-size: 0.95rem;
       }
     }
   </style>
@@ -71,61 +85,56 @@
   </nav>
 
   <!-- Hero Section -->
-<div class="bg-image-div">
-  <div class="container">
-    <!-- NEW: Left-justified CTA text -->
-    <div class="row mb-4">
-      <div class="col-12">
-        
-          CLICK <a href="https://wasitai.com/" target="_new" class="text-white text-decoration-underline fw-bold" style="font-size: 1.1rem;">HERE</a> TO TRY A SIMPLE VERIFICATION TEST TO PROVE A FAKE IMAGE
-        </a>
-      </div>
-    </div>
-
-    <!-- Existing hero content -->
-    <div class="row justify-content-end">
-      <div class="col-12 col-md-6 col-lg-4 text-overlay text-end">
-        <h1>AI HARM IS REAL.<br />HELP IS HERE</h1>
-        <p>
-          The creation and dissemination of a fake image or video of you is a violation of
-          privacy and a source of trauma. <i>You do not have to cope with this alone!</i>
-        </p>
-        <div class="mt-4 d-grid gap-2 d-md-block">
-          <a href="/help.html" class="btn gradient-btn rounded-pill me-2">Get Help</a>
-          <a href="/about.html" class="btn gradient-btn rounded-pill">Learn More</a>
+  <div class="bg-image-div">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-12 col-md-6 col-lg-4 text-overlay text-end">
+          <h1>AI HARM IS REAL.<br />HELP IS HERE</h1>
+          <p>
+            The creation and dissemination of a fake image or video of you is a violation of
+            privacy and a source of trauma. <i>You do not have to cope with this alone!</i>
+          </p>
+          <div class="mt-4 d-grid gap-2 d-md-block">
+            <a href="/help.html" class="btn gradient-btn rounded-pill me-2">Get Help</a>
+            <a href="/about.html" class="btn gradient-btn rounded-pill">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <!-- Bottom call-to-action text -->
+    <div class="bottom-text">
+      CLICK <a href="https://wasitai.com/" target="_blank" class="text-white text-decoration-underline fw-bold" style="font-size: 1.1rem;">HERE</a> TO TRY A SIMPLE VERIFICATION TEST TO PROVE A FAKE IMAGE
+    </div>
+  </div>
 
   <!-- Main Content Section -->
   <div class="stacked-div">
     <div class="container text-center">
-<!-- What We Do -->
-<div class="row mb-5">
-  <div class="col-12">
-    <h1 class="fs-1">What We Do</h1>
-  </div>
-</div>
+      <!-- What We Do -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <h1 class="fs-1">What We Do</h1>
+        </div>
+      </div>
 
-<div class="row gy-4 justify-content-center">
-  <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center">
-    <img src="/img/SupportVictims.png" class="img-fluid mb-3" alt="Support Victims" style="max-width: 200px;" />
-    <p>We support victims of AI-generated abuse with compassion and care.</p>
-  </div>
+      <div class="row gy-4 justify-content-center">
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center">
+          <img src="/img/SupportVictims.png" class="img-fluid mb-3" alt="Support Victims" style="max-width: 200px;" />
+          <p>We support victims of AI-generated abuse with compassion and care.</p>
+        </div>
 
-  <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center">
-    <img src="/img/Outreach.png" class="img-fluid mb-3" alt="Outreach" style="max-width: 200px;" />
-    <p>We engage with communities to raise awareness and share tools.</p>
-  </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center">
+          <img src="/img/Outreach.png" class="img-fluid mb-3" alt="Outreach" style="max-width: 200px;" />
+          <p>We engage with communities to raise awareness and share tools.</p>
+        </div>
 
-  <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center">
-    <img src="/img/Prevention.png" class="img-fluid mb-3" alt="Prevention" style="max-width: 200px;" />
-    <p>We advocate for stronger protections and digital safety laws.</p>
-  </div>
-</div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center">
+          <img src="/img/Prevention.png" class="img-fluid mb-3" alt="Prevention" style="max-width: 200px;" />
+          <p>We advocate for stronger protections and digital safety laws.</p>
+        </div>
+      </div>
+
       <!-- Video Section -->
       <div class="row mb-5 justify-content-center">
         <div class="col-12 col-md-8">
