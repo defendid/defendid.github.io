@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DefendMyRep – Resources</title>
+
+  <style>
+    :root {
+      --navy: #0b1230;
+      --orange: #f7931e;
+      --light-gray: #f4f4f4;
+      --mid-gray: #e6e6e6;
+      --text-dark: #1a1a1a;
+      --text-muted: #555;
+      --white: #ffffff;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+      font-size: 14px;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .logo span {
+      color: var(--orange);
+      font-style: italic;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #cfd3ff;
+    }
+
+    .hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 64px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      color: #cfd3ff;
+      margin-bottom: 28px;
+      max-width: 480px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: #000;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    /* ---------- SECTIONS ---------- */
+
+    section {
+      padding: 64px 24px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .center h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .center p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: var(--text-muted);
+    }
+
+    .section-header {
+      background: var(--light-gray);
+      padding: 12px 0;
+      margin-bottom: 40px;
+    }
+
+    .section-header h3 {
+      margin: 0;
+      color: var(--orange);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .side-box {
+      background: var(--light-gray);
+      padding: 28px;
+      border-radius: 6px;
+    }
+
+    .side-box .btn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .resource-links p {
+      margin: 8px 0;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      background: var(--navy);
+      color: #cfd3ff;
+      padding: 48px 24px 24px;
+    }
+
+    footer .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h4 {
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 24px;
+      color: #9aa0ff;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      footer .container {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="logo">defend<span>my</span>rep.org</div>
+    <nav>
+      <a href="#">Verify</a>
+      <a href="#">Get Support</a>
+      <a href="#">How This Works</a>
+      <a href="#">Resources</a>
+      <a href="#">About Us</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div>
+      <h1>Knowledge is protection, and <span>action creates change.</span></h1>
+      <p>
+        Educational guides, practical tools, and advocacy to help individuals,
+        families, and communities understand and respond to deepfake harm.
+      </p>
+      <a class="btn" href="#">Join the Movement</a>
+    </div>
+  </div>
+</header>
+
+<section class="center">
+  <div class="container">
+    <h2>Support the people affected today.<br />Protect others tomorrow.</h2>
+    <a class="btn" href="#">Law Enforcement Support</a>
+  </div>
+</section>
+
+<section>
+  <div class="section-header center">
+    <h3>Education & Prevention</h3>
+  </div>
+
+  <div class="container two-col">
+    <div>
+      <p>
+        We provide clear, accessible educational materials for families,
+        schools, and communities to help people recognize deepfake harm
+        before it escalates.
+      </p>
+      <ul>
+        <li>Explain what deepfakes are in plain language</li>
+        <li>Help adults and teens recognize early warning signs</li>
+        <li>Reduce fear by replacing misinformation with clarity</li>
+        <li>Encourage proactive conversations</li>
+      </ul>
+    </div>
+
+    <div class="side-box">
+      <a class="btn" href="#">Download Guide for Educators</a>
+      <a class="btn" href="#">Schedule an Educational Seminar</a>
+      <p><strong>Education is one of the strongest forms of prevention.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-header center">
+    <h3>Victim Resources</h3>
+  </div>
+
+  <div class="container two-col">
+    <div>
+      <p>
+        Guides, scripts, checklists, and mental health resources designed
+        to help victims respond safely and confidently.
+      </p>
+      <ul>
+        <li>Step-by-step response guides</li>
+        <li>Scripts for talking to schools or employers</li>
+        <li>Checklists outlining what to do—and what not to do</li>
+        <li>Emotional well-being support</li>
+      </ul>
+    </div>
+
+    <div class="resource-links">
+      <p><a href="#">Resource name link</a></p>
+      <p><a href="#">Resource name link</a></p>
+      <p><a href="#">Resource name link</a></p>
+      <p><a href="#">Resource name link</a></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-header center">
+    <h3>Parent & Caregiver Resources</h3>
+  </div>
+
+  <div class="container two-col">
+    <div>
+      <p>
+        Tools to help families move forward with confidence, compassion,
+        and clarity—without needing technical expertise.
+      </p>
+      <ul>
+        <li>Understand the technology</li>
+        <li>Respond calmly and supportively</li>
+        <li>Avoid actions that worsen the situation</li>
+        <li>Advocate effectively for your child</li>
+      </ul>
+    </div>
+
+    <div class="resource-links">
+      <p><a href="#">Resource name link</a></p>
+      <p><a href="#">Resource name link</a></p>
+      <p><a href="#">Resource name link</a></p>
+      <p><a href="#">Resource name link</a></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-header center">
+    <h3>Policy & Advocacy</h3>
+  </div>
+
+  <div class="container two-col">
+    <div>
+      <p>
+        Our advocacy work is nonpartisan and focused on modernizing
+        protections as technology evolves.
+      </p>
+      <ul>
+        <li>Protecting children and vulnerable individuals</li>
+        <li>Updating laws to reflect modern threats</li>
+        <li>Holding perpetrators accountable</li>
+        <li>Supporting victims without stigma</li>
+      </ul>
+    </div>
+
+    <div class="side-box">
+      <a class="btn" href="#">Law Enforcement Support</a>
+      <p>
+        <strong>This is not about politics.</strong><br />
+        It is about safety, dignity, and accountability.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <h4>Your truth. Your power. Your move.</h4>
+      <p>
+        DefendMyRep exists to protect people, restore dignity, and create
+        a safer digital future.
+      </p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@defendmyrep.org</p>
+      <p>Business Address</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <small>
+      © DefendMyRep. Include org info, legalese, copyright,
+      and security logos here.
+    </small>
+  </div>
+</footer>
+
+</body>
+</html>
+
