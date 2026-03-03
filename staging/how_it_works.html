@@ -76,6 +76,38 @@
       font-weight: 700;
     }
 
+        /* ================= Video Section ================= */
+.video-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 20px;
+
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical alignment */
+}
+    .video-section h2 {
+      font-size: 30px;
+      margin-bottom: 14px;
+      color: var(--orange);
+    }
+
+    .video-section p {
+      color: var(--muted);
+    }
+.video-placeholder {
+  background: #000;
+  border-radius: var(--radius);
+  aspect-ratio: 16 / 9;
+  position: relative;        /* ← key */
+  overflow: hidden;          /* ← prevents bleed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+  max-width: 900px;   /* controls video size */
+}
+
     /* ================= Hero ================= */
     .hero {
       background: linear-gradient(180deg, var(--navy), var(--navy-dark));
@@ -322,7 +354,15 @@
     what to avoid, and how to protect yourself or someone you love.
   </p>
   <strong>Proof comes first. Support follows. Action becomes possible.</strong>
+ 
 </section>
+  <section class="video-section">
+    <div class="video-placeholder">
+     <iframe src="/how_to_use.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DEFEND ID"></iframe>
+    </div>
+  </section>
+
+
 
 <section class="step">
   <div class="step-inner">
