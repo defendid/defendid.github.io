@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DefendMyRep</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Inter, sans-serif;
+color:#111;
+line-height:1.5;
+background:#f7f7f7;
+}
+
+.container{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:0 24px;
+}
+
+header{
+background:#e9f0f4;
+border-bottom:1px solid #ddd;
+}
+
+.nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:18px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+.logo span{
+color:#ef7f1a;
+font-weight:600;
+font-style:italic;
+}
+
+nav a{
+margin-left:26px;
+text-decoration:none;
+font-weight:500;
+color:#333;
+}
+
+.contact-btn{
+background:#ef7f1a;
+color:white;
+padding:8px 16px;
+border-radius:18px;
+font-size:14px;
+}
+
+.hero{
+background:#ececec;
+padding:90px 0 80px;
+text-align:center;
+}
+
+.hero h1{
+font-size:56px;
+font-weight:800;
+color:#0d1231;
+margin-bottom:8px;
+}
+
+.hero h2{
+font-size:28px;
+color:#ef7f1a;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.hero p{
+max-width:680px;
+margin:auto;
+font-size:17px;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#ef7f1a;
+color:white;
+padding:14px 28px;
+border-radius:28px;
+font-weight:600;
+text-decoration:none;
+}
+
+.hero small{
+display:block;
+margin-top:18px;
+color:#555;
+}
+
+.video-section{
+background:white;
+padding:70px 0;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.video-text h3{
+font-size:30px;
+color:#ef7f1a;
+margin-bottom:16px;
+}
+
+.video-text p{
+font-size:16px;
+color:#333;
+}
+
+.video-placeholder{
+background:#000;
+height:320px;
+border-radius:4px;
+}
+
+.dark-section{
+background:#02062a;
+color:white;
+padding:80px 0;
+}
+
+.dark-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.dark-title{
+font-size:52px;
+font-weight:800;
+}
+
+.dark-title em{
+font-style:italic;
+font-weight:500;
+}
+
+.highlight{
+color:#ef7f1a;
+font-weight:700;
+margin-top:20px;
+display:block;
+font-size:22px;
+}
+
+.section{
+padding:80px 0;
+background:#f7f7f7;
+}
+
+.section h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.section h2 span{
+color:#ef7f1a;
+}
+
+.feature{
+display:grid;
+grid-template-columns:200px 1fr;
+gap:40px;
+align-items:center;
+padding:40px 0;
+border-top:1px solid #e2e2e2;
+}
+
+.icon{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #ef7f1a;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:36px;
+color:#ef7f1a;
+margin-bottom:10px;
+}
+
+.feature-left{
+text-align:center;
+}
+
+.feature-left h4{
+font-family:cursive;
+font-size:24px;
+margin:10px 0;
+}
+
+.feature-left .btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 22px;
+font-size:14px;
+}
+
+.feature-right h3{
+font-size:24px;
+margin-bottom:12px;
+}
+
+.feature-right ul{
+margin-top:10px;
+padding-left:18px;
+}
+
+.feature-right li{
+margin-bottom:6px;
+}
+
+.why{
+padding:90px 0;
+text-align:center;
+}
+
+.why h2{
+font-size:44px;
+margin-bottom:24px;
+}
+
+.why span{
+color:#ef7f1a;
+}
+
+.cta{
+background:#02062a;
+color:white;
+text-align:center;
+padding:70px 0;
+}
+
+.cta h3{
+font-size:28px;
+margin-bottom:12px;
+}
+
+footer{
+background:#efefef;
+padding:50px 0;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:40px;
+}
+
+.footer-logo{
+font-size:28px;
+font-weight:700;
+}
+
+.footer-logo span{
+color:#ef7f1a;
+font-style:italic;
+}
+
+footer a{
+display:block;
+margin-bottom:8px;
+text-decoration:none;
+color:#222;
+}
+
+.legal{
+background:#d9e5ec;
+text-align:center;
+padding:18px;
+font-size:13px;
+color:#333;
+}
+
+@media (max-width:900px){
+
+.hero h1{
+font-size:40px;
+}
+
+.video-grid,
+.dark-grid,
+.feature{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.feature-left{
+margin-bottom:20px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">defend <span>my</span> rep.org</div>
+
+<nav>
+<a href="#">Verify</a>
+<a href="#">Get Support</a>
+<a href="#">How This Works</a>
+<a href="#">Resources</a>
+<a href="#">About</a>
+<a class="contact-btn" href="#">Contact Us</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Proof. Protection. Power.</h1>
+<h2>Your shield against deepfake harm.</h2>
+
+<p>
+DefendMyRep helps victims of deepfake sexual exploitation—especially minors and their families—verify fake images, regain control, and take meaningful action.
+</p>
+
+<div class="hero-buttons">
+<a class="btn" href="#">Verify an Image or Video</a>
+<a class="btn" href="#">Get Help Now</a>
+</div>
+
+<small>Trusted support for deepfake victims, parents, and communities.</small>
+
+</div>
+</section>
+
+<section class="video-section">
+
+<div class="container video-grid">
+
+<div class="video-text">
+<h3>When deepfake targets you, seconds matter.</h3>
+<p>
+This short video explains what deepfake harm is, why it's dangerous, and how DefendMyRep helps victims take back control—quickly and safely.
+</p>
+</div>
+
+<div class="video-placeholder"></div>
+
+</div>
+</section>
+
+<section class="dark-section">
+
+<div class="container dark-grid">
+
+<div class="dark-title">
+What’s <em>really</em><br>happening:
+</div>
+
+<div>
+<p>
+Deepfake sexual abuse is rising fast. Anyone can create fake explicit images using a single photo.
+Victims—often children—are left frightened, isolated, and unsure where to turn.
+</p>
+
+<span class="highlight">One child is too many.</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>How Defend<span>My</span>Rep helps.</h2>
+
+<div class="feature">
+
+<div class="feature-left">
+
+<div class="icon">✓</div>
+
+<h4>Verify the truth.</h4>
+
+<a class="btn">Start Verification</a>
+
+</div>
+
+<div class="feature-right">
+
+<h3>Built for victims first.</h3>
+
+<p>
+DefendMyRep is designed with real people in mind, not institutions.
+</p>
+
+<ul>
+<li>Prove the content is fake</li>
+<li>Understand your options</li>
+<li>Protect your reputation</li>
+<li>Regain your voice</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-left">
+
+<div class="icon">👪</div>
+
+<h4>Get support.</h4>
+
+<a class="btn">Resources for Parents</a>
+
+</div>
+
+<div class="feature-right">
+
+<h3>Support for parents & families.</h3>
+
+<p>
+Trauma-informed guidance helps victims and families respond calmly and confidently.
+</p>
+
+<ul>
+<li>Clear guidance</li>
+<li>Emotional support tools</li>
+<li>Mistake-avoidance tips</li>
+<li>A calm, credible path forward</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-left">
+
+<div class="icon">✊</div>
+
+<h4>Take action.</h4>
+
+<a class="btn">Join the Movement</a>
+
+</div>
+
+<div class="feature-right">
+
+<h3>Awareness, advocacy & change.</h3>
+
+<p>
+We work with communities, educators, law enforcement, and policymakers to advocate stronger protections.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<div class="container">
+
+<h2>Why Defend<span>My</span>Rep</h2>
+
+<p>
+Founded by B. Harrison Smith, DefendMyRep brings together experts in AI, education, cybercrime, and law enforcement.
+</p>
+
+<p style="margin-top:16px;font-weight:600;">
+We move fast. We act responsibly. We focus on people.
+</p>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h3>Your truth. Your power. Your move.</h3>
+
+<p>DefendMyRep exists to protect people and restore dignity.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer-grid">
+
+<div class="footer-logo">
+defend <span>my</span> rep.org
+</div>
+
+<div>
+<a href="#">Verify</a>
+<a href="#">How This Works</a>
+<a href="#">Resources</a>
+<a href="#">About</a>
+<a href="#">Get Support</a>
+</div>
+
+<div>
+<p>Contact Us</p>
+<p>Email:</p>
+<p>Biz Address:</p>
+</div>
+
+</div>
+
+</footer>
+
+<div class="legal">
+Need to include org info and legalese, copyright, security logos, etc.
+</div>
+
+</body>
+</html>

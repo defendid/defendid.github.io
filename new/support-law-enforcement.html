@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DefendMyRep – Law Enforcement Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#070a2f;
+  --orange:#f58220;
+  --light:#f2f2f2;
+  --mid:#e6e6e6;
+  --text:#1a1a1a;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--text);
+  line-height:1.5;
+}
+
+.container{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  padding:0 20px;
+}
+
+header{
+  background:#fff;
+  border-bottom:1px solid #ddd;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+}
+
+.logo{
+  font-weight:700;
+  font-size:22px;
+}
+
+.logo span{
+  color:var(--orange);
+  font-weight:800;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+  font-size:14px;
+}
+
+.contact-btn{
+  background:var(--orange);
+  color:#fff;
+  padding:8px 16px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.hero{
+  background:var(--navy);
+  color:#fff;
+  padding:70px 0;
+}
+
+.hero-inner{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-icon{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:6px solid var(--orange);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:60px;
+}
+
+.hero small{
+  color:var(--orange);
+  font-weight:700;
+  letter-spacing:.02em;
+}
+
+.hero h1{
+  font-size:46px;
+  font-weight:800;
+  margin-top:10px;
+}
+
+.intro{
+  text-align:center;
+  padding:60px 0;
+  background:#fff;
+}
+
+.intro p{
+  max-width:700px;
+  margin:0 auto 16px auto;
+  color:#444;
+}
+
+.intro strong{
+  display:block;
+  margin-top:18px;
+  font-size:20px;
+}
+
+.support-bar{
+  background:var(--mid);
+  padding:28px 0;
+}
+
+.support-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.support-inner h2{
+  font-size:24px;
+  font-weight:700;
+}
+
+.btn{
+  background:var(--orange);
+  color:#fff;
+  padding:14px 34px;
+  border-radius:30px;
+  font-weight:600;
+}
+
+.content{
+  padding:60px 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:50px;
+}
+
+.content p{
+  margin-bottom:14px;
+  color:#444;
+}
+
+ul{
+  margin:14px 0 18px 20px;
+}
+
+li{margin-bottom:6px}
+
+.resources h3{
+  margin-bottom:14px;
+}
+
+.resources a{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+  color:#111;
+}
+
+.tagline{
+  background:var(--navy);
+  color:#fff;
+  text-align:center;
+  padding:45px 20px;
+}
+
+.tagline h2{
+  font-size:28px;
+  margin-bottom:6px;
+}
+
+footer{
+  background:#f7f7f7;
+  padding:50px 0;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:30px;
+}
+
+.footer-logo{
+  font-size:26px;
+  font-weight:700;
+}
+
+.footer-logo span{color:var(--orange)}
+
+.footer-links a{
+  display:block;
+  margin-bottom:6px;
+}
+
+.legal{
+  background:#dbe5ec;
+  text-align:center;
+  padding:18px;
+  font-size:13px;
+}
+
+@media(max-width:900px){
+
+.hero-inner{
+  grid-template-columns:1fr;
+  text-align:center;
+}
+
+.hero-icon{margin:auto}
+
+.hero h1{font-size:36px}
+
+.grid{
+  grid-template-columns:1fr;
+}
+
+.footer-grid{
+  grid-template-columns:1fr;
+  text-align:center;
+}
+
+.support-inner{
+  text-align:center;
+  justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">defend <span>my</span> rep.org</div>
+
+<div class="nav-links">
+<div>Verify</div>
+<div style="color:var(--orange);font-weight:600">Get Support</div>
+<div>How This Works</div>
+<div>Resources</div>
+<div>About Us</div>
+</div>
+
+<div class="contact-btn">Contact Us</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-inner">
+
+<div class="hero-icon">👥</div>
+
+<div>
+<small>Law Enforcement Support.</small>
+<h1>Modern technology requires modern tools and trusted partners.</h1>
+</div>
+
+</div>
+</section>
+
+<section class="intro">
+<div class="container">
+
+<p>
+Deepfake sexual exploitation presents challenges that many agencies do not have the resources to handle. <strong>DefendMyRep</strong> serves as specialized support for law enforcement agencies in navigating AI‑generated crimes.
+</p>
+
+<p>
+We provide verification, investigative guidance, and expert insight to help agencies act quickly, confidently, and effectively in cases involving deepfake harm.
+</p>
+
+<strong>When the tools are unavailable, we help bridge the gap.</strong>
+
+</div>
+</section>
+
+<section class="support-bar">
+<div class="container support-inner">
+<h2>Supporting agencies investigating AI‑generated sexual crimes.</h2>
+<div class="btn">Contact Us</div>
+</div>
+</section>
+
+<section class="content">
+<div class="container grid">
+
+<div>
+
+<p>
+Deepfake sexual exploitation presents unique investigative and procedural challenges. Many agencies lack dedicated cybercrime units or specialized AI expertise, yet are increasingly encountering these cases.
+</p>
+
+<p><strong>DefendMyRep</strong> supports law enforcement by providing:</p>
+
+<ul>
+<li>AI‑based verification of suspected deepfake content</li>
+<li>Documentation support suitable for investigative and legal use</li>
+<li>Expert consultation on emerging AI threats</li>
+<li>Guidance on victim‑centered response and communication</li>
+</ul>
+
+<p>
+<strong>DefendMyRep</strong> does not replace existing authority or investigative processes. We act as a supplemental resource—helping agencies respond faster, reduce uncertainty, and better support victims.
+</p>
+
+</div>
+
+<div class="resources">
+<h3>Explore support resources:</h3>
+
+<a>Listed source links will go here.</a>
+<a>Resource name link.</a>
+<a>Resource name link.</a>
+<a>Resource name link.</a>
+<a>Resource name link.</a>
+<a>Resource name link.</a>
+
+</div>
+
+</div>
+</section>
+
+<section class="tagline">
+<h2>Your truth. Your power. Your move.</h2>
+<p>DefendMyRep exists to protect people, restore dignity, and create a safer digital future.</p>
+</section>
+
+<footer>
+<div class="container footer-grid">
+
+<div class="footer-logo">defend <span>my</span> rep.org</div>
+
+<div class="footer-links">
+<a>Verify</a>
+<a>How This Works</a>
+<a>Resources</a>
+<a>About Us</a>
+<a style="color:var(--orange)">Get Support</a>
+</div>
+
+<div>
+<strong>Contact Us</strong>
+<p>Email:</p>
+<p>Biz Address:</p>
+</div>
+
+</div>
+</footer>
+
+<div class="legal">
+Need to include org info and legalese, copyright, security logos, etc.
+</div>
+
+</body>
+</html>
