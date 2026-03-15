@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MyRepDefender</title>
+<title>MyRepDefender – How This Works</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -19,251 +19,186 @@ padding:0;
 body{
 font-family:Inter, sans-serif;
 color:#111;
-line-height:1.5;
-background:#f7f7f7;
+background:#f5f5f5;
+line-height:1.6;
 }
 
 .container{
-width:100%;
-max-width:1200px;
+max-width:1150px;
 margin:auto;
 padding:0 24px;
 }
 
+/* HEADER */
+
 header{
-background:#e9f0f4;
-border-bottom:1px solid #ddd;
+background:#e3edf3;
+border-bottom:1px solid #d5d5d5;
 }
 
 .nav{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:18px 0;
 }
 
 .logo{
-font-size:24px;
+font-size:26px;
 font-weight:700;
 }
 
 .logo span{
 color:#ef7f1a;
-font-weight:600;
 font-style:italic;
 }
 
 nav a{
 margin-left:26px;
 text-decoration:none;
+color:#444;
 font-weight:500;
-color:#333;
 }
 
-.contact-btn{
+.contact{
 background:#ef7f1a;
 color:white;
-padding:8px 16px;
-border-radius:18px;
-font-size:14px;
+padding:7px 16px;
+border-radius:16px;
 }
 
+/* HERO */
+
 .hero{
-background:#ececec;
-padding:90px 0 80px;
-text-align:center;
+background:#03072b;
+color:white;
+padding:70px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:320px 1fr;
+gap:50px;
+align-items:center;
+}
+
+.hero-script{
+font-family:cursive;
+font-size:30px;
+margin-bottom:12px;
 }
 
 .hero h1{
 font-size:56px;
+line-height:1.1;
 font-weight:800;
-color:#0d1231;
-margin-bottom:8px;
 }
 
-.hero h2{
-font-size:28px;
+.hero h1 span{
 color:#ef7f1a;
-font-weight:700;
-margin-bottom:18px;
-}
-
-.hero p{
-max-width:680px;
-margin:auto;
-font-size:17px;
-margin-bottom:30px;
-}
-
-.hero-buttons{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.btn{
-background:#ef7f1a;
-color:white;
-padding:14px 28px;
-border-radius:28px;
-font-weight:600;
-text-decoration:none;
-}
-
-.hero small{
 display:block;
-margin-top:18px;
-color:#555;
+font-size:40px;
+margin-top:10px;
 }
 
-.video-section{
-background:white;
+/* INTRO */
+
+.intro{
+text-align:center;
 padding:70px 0;
+background:#f1f1f1;
 }
 
-.video-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.video-text h3{
-font-size:30px;
-color:#ef7f1a;
-margin-bottom:16px;
-}
-
-.video-text p{
-font-size:16px;
+.intro p{
+max-width:720px;
+margin:auto;
+margin-bottom:18px;
 color:#333;
 }
 
-.video-placeholder{
-background:#000;
-height:320px;
-border-radius:4px;
+.intro strong{
+display:block;
+font-size:24px;
+margin-top:24px;
 }
 
-.dark-section{
-background:#02062a;
+/* STEP SECTIONS */
+
+.step{
+padding:70px 0;
+background:#e9e9e9;
+text-align:center;
+}
+
+.step h2{
+font-size:32px;
+margin-bottom:18px;
+}
+
+.step h2 span{
+color:#ef7f1a;
+}
+
+.step p{
+max-width:650px;
+margin:auto;
+margin-bottom:16px;
+}
+
+.btn{
+display:inline-block;
+background:#ef7f1a;
 color:white;
-padding:80px 0;
+padding:14px 30px;
+border-radius:26px;
+text-decoration:none;
+font-weight:600;
+margin-top:10px;
 }
 
-.dark-grid{
+/* STEP 2 */
+
+.step2{
+background:#f1f1f1;
+padding:70px 0;
+}
+
+.step2 h2{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+.step2 h2 span{
+color:#ef7f1a;
+}
+
+.step-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
+gap:60px;
+max-width:900px;
+margin:auto;
 }
 
-.dark-title{
-font-size:52px;
-font-weight:800;
+.step-left{
+text-align:center;
 }
 
-.dark-title em{
-font-style:italic;
+.step-right ul{
+list-style:none;
+}
+
+.step-right li{
+margin-bottom:12px;
 font-weight:500;
 }
 
-.highlight{
-color:#ef7f1a;
-font-weight:700;
-margin-top:20px;
-display:block;
-font-size:22px;
-}
-
-.section{
-padding:80px 0;
-background:#f7f7f7;
-}
-
-.section h2{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-}
-
-.section h2 span{
+.step-right li:first-child{
 color:#ef7f1a;
 }
 
-.feature{
-display:grid;
-grid-template-columns:200px 1fr;
-gap:40px;
-align-items:center;
-padding:40px 0;
-border-top:1px solid #e2e2e2;
-}
-
-.icon{
-width:90px;
-height:90px;
-border-radius:50%;
-border:4px solid #ef7f1a;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:36px;
-color:#ef7f1a;
-margin-bottom:10px;
-}
-
-.feature-left{
-text-align:center;
-}
-
-.feature-left h4{
-font-family:cursive;
-font-size:24px;
-margin:10px 0;
-}
-
-.video-placeholder video{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.feature-left .btn{
-display:inline-block;
-margin-top:10px;
-padding:10px 22px;
-font-size:14px;
-}
-
-.feature-right h3{
-font-size:24px;
-margin-bottom:12px;
-}
-
-.feature-right ul{
-margin-top:10px;
-padding-left:18px;
-}
-
-.feature-right li{
-margin-bottom:6px;
-}
-
-.why{
-padding:90px 0;
-text-align:center;
-}
-
-.why h2{
-font-size:44px;
-margin-bottom:24px;
-}
-
-.why span{
-color:#ef7f1a;
-}
+/* CTA */
 
 .cta{
 background:#02062a;
@@ -273,13 +208,15 @@ padding:70px 0;
 }
 
 .cta h3{
-font-size:28px;
-margin-bottom:12px;
+font-size:30px;
+margin-bottom:10px;
 }
 
+/* FOOTER */
+
 footer{
-background:#efefef;
-padding:50px 0;
+background:#f1f1f1;
+padding:60px 0;
 }
 
 .footer-grid{
@@ -289,7 +226,7 @@ gap:40px;
 }
 
 .footer-logo{
-font-size:28px;
+font-size:30px;
 font-weight:700;
 }
 
@@ -306,28 +243,32 @@ color:#222;
 }
 
 .legal{
-background:#d9e5ec;
+background:#dbe6ec;
 text-align:center;
 padding:18px;
 font-size:13px;
-color:#333;
 }
 
-@media (max-width:900px){
+/* RESPONSIVE */
 
-.hero h1{
-font-size:40px;
-}
+@media(max-width:900px){
 
-.video-grid,
-.dark-grid,
-.feature{
+.hero-grid{
 grid-template-columns:1fr;
 text-align:center;
 }
 
-.feature-left{
-margin-bottom:20px;
+.hero h1{
+font-size:38px;
+}
+
+.hero h1 span{
+font-size:28px;
+}
+
+.step-grid{
+grid-template-columns:1fr;
+text-align:center;
 }
 
 .footer-grid{
@@ -361,60 +302,19 @@ text-align:center;
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-grid">
 
-<h1>Proof. Protection. Power.</h1>
-<h2>Your shield against deepfake harm.</h2>
-
-<p>
- MyRepDefender helps victims of deepfake sexual exploitation—especially minors and their families—verify fake images, regain control, and take meaningful action.
-</p>
-
-<div class="hero-buttons">
-<a class="btn" href="#">Verify an Image or Video</a>
-<a class="btn" href="#">Get Help Now</a>
-</div>
-
-<small>Trusted support for deepfake victims, parents, and communities.</small>
-
-</div>
-</section>
-
-<section class="video-section">
-
-<div class="container video-grid">
-
-<div class="video-text">
-<h3>When deepfake targets you, seconds matter.</h3>
-<p>
-This short video explains what deepfake harm is, why it's dangerous, and how  MyRepDefender helps victims take back control—quickly and safely.
-</p>
-</div>
-
-<div class="video-placeholder">
-<video controls>
-<source src="/defendid_landing_video.mp4" type="video/mp4">
-</video>
-</div>
-
-</div>
-</section>
-
-<section class="dark-section">
-
-<div class="container dark-grid">
-
-<div class="dark-title">
-What’s <em>really</em><br>happening:
+<div>
+<div class="hero-script">Verify the truth.</div>
 </div>
 
 <div>
-<p>
-Deepfake sexual abuse is rising fast. Anyone can create fake explicit images using a single photo.
-Victims—often children—are left frightened, isolated, and unsure where to turn.
-</p>
 
-<span class="highlight">One child is too many.</span>
+<h1>
+When something fake<br>
+causes real harm,
+<span>clarity is the first step.</span>
+</h1>
 
 </div>
 
@@ -422,93 +322,79 @@ Victims—often children—are left frightened, isolated, and unsure where to tu
 
 </section>
 
-<section class="section">
+<section class="intro">
 
 <div class="container">
 
-<h2>How My<span>Rep</span>Defender helps.</h2>
+<p>
+<strong>MyRepDefender</strong> was built to help people act quickly and confidently when deepfake sexual content appears.
+Our process is simple, private, and designed to put control back where it belongs—with you.
+</p>
 
-<div class="feature">
+<p>
+From verification to next steps, we guide you through what to do, what to avoid,
+and how to protect yourself or someone you love.
+</p>
 
-<div class="feature-left">
-
-<div class="icon">✓</div>
-
-<h4>Verify the truth.</h4>
-
-<a class="btn">Start Verification</a>
+<strong>
+Proof comes first. Support follows.<br>
+Action becomes possible.
+</strong>
 
 </div>
 
-<div class="feature-right">
+</section>
 
-<h3>Built for victims first.</h3>
+<section class="step">
+
+<div class="container">
+
+<h2>Step 1: <span>Verify the Content</span></h2>
 
 <p>
- MyRepDefender is designed with real people in mind, not institutions.
+Upload the image or video to a secure external verification tool.
+This process is private, confidential, and quick.
 </p>
+
+<p>
+Technology analyzes whether the content was generated or manipulated using AI.
+Results are delivered with up to 99% accuracy.
+</p>
+
+<p><strong>Verification gives you clarity and evidence.</strong></p>
+
+<a class="btn" href="#">Start Verification</a>
+
+</div>
+
+</section>
+
+<section class="step2">
+
+<div class="container">
+
+<h2>Step 2: <span>Understand Your Options</span></h2>
+
+<div class="step-grid">
+
+<div class="step-left">
+
+<p>
+Once you have proof, we help you understand what that proof means and how it can be used.
+</p>
+
+<p><strong>You decide how far to go. We support you either way.</strong></p>
+
+</div>
+
+<div class="step-right">
 
 <ul>
-<li>Prove the content is fake</li>
-<li>Understand your options</li>
-<li>Protect your reputation</li>
-<li>Regain your voice</li>
+<li>How to talk to family members or trusted adults.</li>
+<li>Ways to communicate with schools or employers.</li>
+<li>How to document evidence.</li>
+<li>How to prepare for legal or investigative steps.</li>
 </ul>
-
-</div>
-
-</div>
-
-<div class="feature">
-
-<div class="feature-left">
-
-<div class="icon">👪</div>
-
-<h4>Get support.</h4>
-
-<a class="btn">Resources for Parents</a>
-
-</div>
-
-<div class="feature-right">
-
-<h3>Support for parents & families.</h3>
-
-<p>
-Trauma-informed guidance helps victims and families respond calmly and confidently.
-</p>
-
-<ul>
-<li>Clear guidance</li>
-<li>Emotional support tools</li>
-<li>Mistake-avoidance tips</li>
-<li>A calm, credible path forward</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="feature">
-
-<div class="feature-left">
-
-<div class="icon">✊</div>
-
-<h4>Take action.</h4>
-
-<a class="btn">Join the Movement</a>
-
-</div>
-
-<div class="feature-right">
-
-<h3>Awareness, advocacy & change.</h3>
-
-<p>
-We work with communities, educators, law enforcement, and policymakers to advocate stronger protections.
-</p>
 
 </div>
 
@@ -518,19 +404,22 @@ We work with communities, educators, law enforcement, and policymakers to advoca
 
 </section>
 
-<section class="why">
+<section class="step">
 
 <div class="container">
 
-<h2>Why My<span>Rep</span>Defender</h2>
+<h2>Step 3: <span>Take Back Control</span></h2>
 
 <p>
-Founded by B. Harrison Smith,  MyRepDefender brings together experts in AI, education, cybercrime, and law enforcement.
+Deepfake harm thrives on silence and confusion.
+Verification allows victims to reclaim their voice, reduce fear, and stop speculation.
 </p>
 
-<p style="margin-top:16px;font-weight:600;">
-We move fast. We act responsibly. We focus on people.
+<p>
+Our resources help you move forward with confidence, dignity, and support.
 </p>
+
+<a class="btn" href="#">View Resources</a>
 
 </div>
 
@@ -542,7 +431,7 @@ We move fast. We act responsibly. We focus on people.
 
 <h3>Your truth. Your power. Your move.</h3>
 
-<p> MyRepDefender exists to protect people and restore dignity.</p>
+<p>MyRepDefender exists to protect people, restore dignity, and create a safer digital future.</p>
 
 </div>
 
@@ -553,7 +442,7 @@ We move fast. We act responsibly. We focus on people.
 <div class="container footer-grid">
 
 <div class="footer-logo">
-my <span>rep</span> defender.org
+defend <span>my</span> rep.org
 </div>
 
 <div>
