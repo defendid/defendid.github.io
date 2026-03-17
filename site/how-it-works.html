@@ -284,16 +284,25 @@ text-align:center;
 
 }
 
+/* RIGHT SIDE (video column) */
+.hero-right,
+.video-container,
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0; /* 🔑 prevents overflow in flex layouts */
+}
 
-.video-section{
-background:white;
-padding:70px 0;
-width: 100%;
-height: auto;
-max-width: 520px;
-align-items: center;
-
-
+/* VIDEO ITSELF */
+.hero-right iframe,
+.hero-right video {
+  width: 100%;
+  max-width: 480px;   /* 🔑 controls how small it is */
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+}
 }
 </style>
 </head>
@@ -360,13 +369,8 @@ Action becomes possible.
 
 </div>
 
-</section>
-<div class="container">
-  <section class="video-section">
- <video controls preload="metadata">
-<source src="/how_to_use.mp4" type="video/mp4">
-</video>
-  </section>
+<div class="hero-right">
+  <iframe src="/how_to_use.mp4" allowfullscreen></iframe>
 </div>
 <section class="step">
 
