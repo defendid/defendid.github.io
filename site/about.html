@@ -152,18 +152,27 @@
   padding: 80px 20px;
 
   display: flex;
+    flex-direction: column;   /* stack text above video */
+
+  text-align: center;
   justify-content: center;   /* horizontal center */
   align-items: center;       /* vertical alignment */
 }
-    .video-section h2 {
-      font-size: 30px;
-      margin-bottom: 14px;
-      color: var(--orange);
-    }
+.video-text {
+  margin-bottom: 30px;
+  max-width: 700px;
+}
 
-    .video-section p {
-      color: var(--muted);
-    }
+.video-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: var(--orange);
+}
+
+.video-text p {
+  color: var(--muted);
+  font-size: 15px;
+}
 .video-placeholder {
   background: #000;
   border-radius: var(--radius);
@@ -361,20 +370,18 @@
 
   <!-- Video -->
   <section class="video-section">
+	  <div class="video-text">
+	  <h2>DefendMyRep exists because the harm is real—and the response hasn’t caught up.</h2>
+	  <p>Founded by B. Harrison Smith, an educator, filmmaker, and AI expert, DefendMyRep was created to address the growing gap between rapidly advancing technology and the systems meant to protect people.
+Backed by a multidisciplinary team spanning AI, education, cybercrime law enforcement, legal expertise, technology, and trauma-informed support, we focus on one thing: helping people reclaim control when deepfake harm strikes.</p>
+<p>We don’t traffic in fear. We build clarity, protection, and power.</p>
+	  </div>
     <div class="video-placeholder">
      <iframe src="/site_video_purpose.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DEFEND ID"></iframe>
     </div>
   </section>
 
-  <!-- Why -->
-  <section class="why">
-    <h2>Why MyRepDefender</h2>
-    <p>
-      Founded by B. Harrison Smith, MyRepDefender brings together experts in AI,
-      education, cybercrime law enforcement, and trauma-informed support.
-      We move fast. We act responsibly. We focus on people.
-    </p>
-  </section>
+
 
   <!-- Footer -->
   <footer>
