@@ -10,7 +10,7 @@ from marsh import ma
 def create_app():
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
-        "SQLALCHEMY_DATABASE_URI", "postgresql://tcell:bronx@localhost/bronx"
+        "SQLALCHEMY_DATABASE_URI", "postgresql://defend:D3f3nd@localhost/defend"
     )
 
     db.init_app(app)

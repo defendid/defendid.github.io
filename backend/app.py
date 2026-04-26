@@ -3,7 +3,11 @@ from flask_restful_swagger_3 import Api
 from api import register_apis
 from application import create_app
 from db import db
+from dotenv import load_dotenv
 
+
+
+load_dotenv()
 app = create_app()
 migrate = Migrate(app, db)
 
