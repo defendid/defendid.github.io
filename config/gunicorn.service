@@ -7,7 +7,7 @@ User=your_username
 Group=your_groupname
 WorkingDirectory=/home/ubuntu/defendid.github.io/backend
 Environment="PATH=/home/ubuntu/defendid.github.io/backend/bin"
-ExecStart=/home/ubuntu/defendid.github.io/backend/run_gunicorn.sh
+ExecStart=gunicorn --bind unix://flask.sock app:app
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 TimeoutStopSec=5
