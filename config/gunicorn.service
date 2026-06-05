@@ -1,0 +1,17 @@
+[Unit]
+Description=Gunicorn instance to serve application
+After=network.target
+
+[Service]
+User=your_username
+Group=your_groupname
+WorkingDirectory=/home/ubuntu/defendid.github.io/backend
+Environment="PATH=/home/ubuntu/defendid.github.io/backend/bin"
+ExecStart=/home/ubuntu/defendid.github.io/backend/run_gunicorn.sh
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
