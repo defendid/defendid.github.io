@@ -14,4 +14,7 @@ class Contact(db.Model):
     )
     name: Mapped[str] = mapped_column(unique=True)
     email: Mapped[str]
+    phone: Mapped[str]
+    subject: Mapped[str]
+    message: Mapped[str]
  

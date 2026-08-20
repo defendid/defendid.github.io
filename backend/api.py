@@ -18,12 +18,15 @@ class Contacts(Resource):
         return Contacts_schema.dump(Contact.query.all())
 
     def post(self):
-        Contact = Contact(
+        contact = Contact(
             id=None,
             name=request.json['name'],
-            email=request.json['email']
+            email=request.json['email'],
+            phone=request.json['phone'],
+            subject=request.json['subject'],
+            message=request.json['message'],
         )
-        db.session.add(Contact)
+        db.session.add(contact)
         db.session.commit()
 
         return ok(ContactSchema().dump(Contact))
@@ -47,5 +50,5 @@ class ContactResource(Resource):
 
 
 def register_apis(api):
-    api.add_resource(Contacts, "/contacts")
+    api.add_resource(Contacts, "/api/contacts")
     api.add_resource(ContactResource, "/contact/<contact_id>")
