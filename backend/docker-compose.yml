@@ -1,0 +1,49 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - gunicorn
+    networks:
+      - app_network
+
+  gunicorn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gunicorn
+    command: gunicorn --bind 0.0.0.0:8000 app:app
+    expose:
+      - "8000"
+    environment:
+      DATABASE_URL: postgresql://appuser:apppassword@postgresql:5432/appdb
+    depends_on:
+      - postgresql
+    networks:
+      - app_network
+
+  postgresql:
+    image: postgres:16-alpine
+    container_name: postgresql
+    environment:
+      POSTGRES_DB: appdb
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: apppassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+    networks:
+      - app_network
+
+volumes:
+  postgres_data:
+
+networks:
+  app_network:
+    driver: bridge
+
